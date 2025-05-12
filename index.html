@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlands Lodge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home-container">
+            <i class="fas fa-mountain"><i> Highlands Lodge
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms-section">
+                  <i class="fas fa-bed"><i> Rooms
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dining-page">
+                  <i class="fas fa-utensils"><i> Restaurant
+                </a>
+              </li>
+               <li class="nav-item">
+                 <a href="/booking" class="btn btn-book nav-link">
+                    <i class="fas fa-calendar-check"><i> Book Now
+                 </a>
+              </li>
+            </ul>
+
+            <div class="nav-buttons">
+              <button id="theme-toggler" class="btn btn-link me-2">
+                  <i class="fas fa-moon"><i> </button>
+              </div>
+          </div>
+        </div>
+      </nav>
+      <div class="navbar-spacer"></div>
+
+    <div class="home-container main-content-area" id="home-container">
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Welcome to Highlands Lodge</h1>
+          <p>Experience Luxury & Comfort Like Never Before</p>
+          <a href="/booking" class="btn btn-cta">
+            Book Your Stay <i class="fas fa-arrow-right"><i>
+          </a>
+        </div>
+        <div class="hero-features-cards">
+             <div class="feature-card">
+                <i class="fas fa-concierge-bell"><i>
+                <h3>24/7 Service</h3>
+              </div>
+             <div class="feature-card">
+                <i class="fas fa-wifi"><i>
+                <h3>Free Wi-Fi</h3>
+              </div>
+             <div class="feature-card">
+                <i class="fas fa-parking"><i>
+                <h3>Free Parking</h3>
+              </div>
+             <div class="feature-card">
+                <i class="fas fa-plane-departure"><i>
+                <h3>3km from airport</h3>
+              </div>
+        </div>
+      </section>
+
+      <section class="rooms-section" id="rooms-section">
+        <div class="container">
+          <h2 class="section-title">Our Luxurious Rooms</h2>
+          <div class="row g-4 room-cards-row">
+            <div class="col-md-3">
+              <div class="room-card" data-room="single" id="single-room-card">
+                <div class="room-image single"></div>
+                <div class="room-info">
+                  <h3>Single Room</h3>
+                  <p>Cozy and comfortable for solo travelers</p>
+                  <span class="price">From M 932.00/night</span>
+                  <a href="#single-room-details" class="btn btn-outline view-details-btn">View Details</a>
+                </div>
+                <div class="room-details" id="single-room-details">
+                    <p>Our Single Rooms offer a peaceful retreat with a comfortable bed, a small workspace, and essential amenities. Perfect for a quick getaway or a business trip.</p>
+                    <div class="room-details-images">
+                         <img src="images/rooms/single-bathroom.jpg" alt="Single Room Bathroom" class="img-fluid rounded">
+                         <img src="images/rooms/single-closet.jpg" alt="Single Room Closet" class="img-fluid rounded">
+                    </div>
+                    <h5 class="mt-3">Amenities Include:</h5>
+                    <ul>
+                        <li>Free Wi-Fi</li>
+                        <li>Air Conditioning</li>
+                        <li>Flat-screen TV</li>
+                        <li>Mini-fridge</li>
+                        <li>En-suite Bathroom</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="room-card" data-room="deluxe" id="deluxe-room-card">
+                <div class="room-image deluxe"></div>
+                <div class="room-info">
+                  <h3>Double Sharing Room</h3>
+                  <p>Perfect for business travelers</p>
+                  <span class="price">From M 1,107.00/night</span>
+                   <a href="#deluxe-room-details" class="btn btn-outline view-details-btn">View Details</a>
+                </div>
+                 <div class="room-details" id="deluxe-room-details">
+                    <p>The Deluxe Suite provides extra space with a separate living area, ideal for relaxing or catching up on work. Enjoy upgraded amenities and a comfortable stay.</p>
+                     <div class="room-details-images">
+                         <img src="images/rooms/deluxe-bathroom.jpg" alt="Deluxe Suite Bathroom" class="img-fluid rounded">
+                         <img src="images/rooms/deluxe-closet.jpg" alt="Deluxe Suite Closet" class="img-fluid rounded">
+                    </div>
+                     <h5 class="mt-3">Amenities Include:</h5>
+                    <ul>
+                        <li>Spacious Living Area</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Air Conditioning</li>
+                        <li>Flat-screen TV</li>
+                        <li>Mini-bar</li>
+                        <li>Luxury Bathroom</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="room-card" data-room="executive" id="executive-room-card">
+                <div class="room-image executive"></div>
+                <div class="room-info">
+                  <h3>Family Room of Three</h3>
+                  <p>Spacious comfort with city views</p>
+                  <span class="price">From M 1,437.50/night</span>
+                   <a href="#executive-room-details" class="btn btn-outline view-details-btn">View Details</a>
+                </div>
+                 <div class="room-details" id="executive-room-details">
+                    <p>Our Executive Suites offer premium comfort with stunning city views. Featuring a dedicated workspace and enhanced services, it's perfect for executives.</p>
+                     <div class="room-details-images">
+                         <img src="images/rooms/executive-bathroom.jpg" alt="Executive Suite Bathroom" class="img-fluid rounded">
+                         <img src="images/rooms/executive-closet.jpg" alt="Executive Suite Closet" class="img-fluid rounded">
+                    </div>
+                     <h5 class="mt-3">Amenities Include:</h5>
+                    <ul>
+                        <li>Dedicated Workspace</li>
+                        <li>City Views</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Air Conditioning</li>
+                        <li>Premium Mini-bar</li>
+                        <li>Executive Lounge Access (Optional)</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="room-card" data-room="presidential" id="presidential-room-card">
+                <div class="room-image presidential"></div>
+                <div class="room-info">
+                  <h3>Family Room of Four</h3>
+                  <p>Ultimate luxury experience</p>
+                  <span class="price">From M 1,725.00/night</span>
+                   <a href="#presidential-room-details" class="btn btn-outline view-details-btn">View Details</a>
+                </div>
+                 <div class="room-details" id="presidential-room-details">
+                    <p>Indulge in the ultimate luxury with our Presidential Suite. This expansive suite offers multiple rooms, exclusive services, and panoramic views of the city.</p>
+                     <div class="room-details-images">
+                         <img src="images/rooms/presidential-bathroom.jpg" alt="Presidential Suite Bathroom" class="img-fluid rounded">
+                         <img src="images/rooms/presidential-closet.jpg" alt="Presidential Suite Closet" class="img-fluid rounded">
+                    </div>
+                     <h5 class="mt-3">Amenities Include:</h5>
+                    <ul>
+                        <li>Multiple Rooms</li>
+                        <li>Panoramic Views</li>
+                        <li>Exclusive Services</li>
+                        <li>Complimentary Breakfast</li>
+                        <li>Premium Amenities</li>
+                        <li>Private Concierge</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div id="room-expansion-panel" class="room-expansion-panel mt-4">
+              </div>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <div class="container">
+          <h2 class="section-title">Our Services</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service-tile">
+                    <h3>Guest Services</h3>
+                    <p>We offer a range of services to make your stay comfortable</p>
+                    <ul>
+                        <li>Daily housekeeping</li>
+                        <li>Private check-in/out</li>
+                        <li>Packed lunches</li>
+                        <li>Ironing service (Additional charge)</li>
+                        <li>Laundry (Additional charge)</li>
+                        <li>Room service</li>
+                        <li>Invoice provided</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="service-tile">
+                    <h3>Food & Drink</h3>
+                    <ul>
+                        <li>Coffee house on site</li>
+                        <li>Fruit</li>
+                        <li>Wine/Champagne (Additional charge)</li>
+                        <li>Kid-friendly buffet</li>
+                        <li>Kids' meals</li>
+                        <li>Special diet meals (on request)</li>
+                        <li>Breakfast in the room</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="service-tile">
+                    <h3>Transport & Safety</h3>
+                    <ul>
+                        <li>Shuttle service (Additional charge)</li>
+                        <li>Airport shuttle (Additional charge)</li>
+                        <li>Free private parking</li>
+                        <li>Fire extinguishers</li>
+                        <li>24-hour security</li>
+                        <li>Designated smoking area</li>
+                        <li>Smoke-free property</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+
+
+    <div class="dining-page main-content-area" id="dining-page">
+      <div class="dining-hero">
+        <div class="hero-content">
+          <h1>Fine Dining Experience</h1>
+          <p>Culinary excellence in an elegant setting</p>
+        </div>
+      </div>
+
+      <section class="restaurant-info">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2>Highlands Lodge Restaurant</h2>
+              <p class="lead">Experience culinary artistry at its finest</p>
+              <p>Our award-winning restaurant offers an unforgettable dining experience with breathtaking views and exceptional service.</p>
+              <div class="restaurant-details">
+                <div class="detail-item">
+                  <i class="fas fa-clock"><i>
+                  <div>
+                    <h5>Opening Hours</h5>
+                    <p>Breakfast: 6:30 AM - 10:30 AM<br>
+                       Lunch: 12:00 PM - 3:00 PM<br>
+                       Dinner: 6:00 PM - 11:00 PM</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-phone"><i>
+                  <div>
+                    <h5>Reservations</h5>
+                    <p>+1 234 567 890</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="restaurant-image">
+                <img src="images/dining/restaurant-interior.jpg" alt="Restaurant Interior" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <div class="container">
+          <h2 class="text-center mb-5">Our Menu</h2>
+
+          <div class="menu-tabs">
+            <button class="menu-tab active" data-menu="breakfast">
+              <i class="fas fa-coffee"><i> Breakfast
+            </button>
+            <button class="menu-tab" data-menu="lunch-dinner">
+              <i class="fas fa-utensils"><i> Lunch/Dinner
+            </button>
+            <button class="menu-tab" data-menu="dessert">
+              <i class="fas fa-ice-cream"><i> Dessert
+            </button>
+             <button class="menu-tab" data-menu="beverages">
+              <i class="fas fa-glass-whiskey"><i> Beverages
+            </button>
+          </div>
+
+          <div class="menu-items">
+            <div class="row g-4 menu-category" id="breakfast-menu">
+              <div class="col-md-4">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img src="images/menu/breakfast-cereals.jpg" alt="Breakfast Cereals" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EBreakfast Cereals%3C/text%3E%3C/svg%3E'" />
+                    <div class="price">M 25.00</div>
+                  </div>
+                  <div class="menu-item-info">
+                    <h4>Breakfast Cereals</h4>
+                    <p>served with milk/yoghurt either with All bran flakes, Corn flakes, Weet-Bix</p>
+                    <div class="dietary-info">
+                        <span class="dietary-tag">
+                            <i class="fas fa-leaf"><i> vegetarian
+                        </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                     <img src="images/menu/hot-breakfast.jpg" alt="Hot Breakfast" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EHot Breakfast%3C/text%3E%3C/svg%3E'" />
+                    <div class="price">M 115.00</div>
+                  </div>
+                  <div class="menu-item-info">
+                    <h4>Hot Breakfast</h4>
+                    <p>home-made bread, vegetables and 2 eggs served with either bacon and Vienna sausage or onion rings and wors or onion ring and cocktail beef sausage or Omelette</p>
+                    <div class="dietary-info">
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                     <img src="images/menu/soft-porridge.jpg" alt="Soft Porridge" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ESoft Porridge%3C/text%3E%3C/svg%3E'" />
+                    <div class="price">M 15.00</div>
+                  </div>
+                  <div class="menu-item-info">
+                    <h4>Home-made soft porridge</h4>
+                    <p>(maize meal/sorghum)</p>
+                    <div class="dietary-info">
+                         <span class="dietary-tag">
+                            <i class="fas fa-leaf"><i> vegetarian
+                        </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                     <img src="images/menu/sandwiches.jpg" alt="Sandwiches" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ESandwiches%3C/text%3E%3C/svg%3E'" />
+                    <div class="price">M 52.00</div>
+                  </div>
+                  <div class="menu-item-info">
+                    <h4>Sandwiches (toast/ plain bread)</h4>
+                    <p>served with either Cheese and tomato or Bacon and egg or Chicken mayo</p>
+                    <div class="dietary-info">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 menu-category" id="lunch-dinner-menu" style="display: none;">
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/lamb-chops.jpg" alt="Lamb Chops" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ELamb Chops%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 178.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Lamb Chops</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/pork-chops.jpg" alt="Pork Chops" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EPork Chops%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 161.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Pork chops</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/rump-steak.jpg" alt="Rump Steak" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ERump Steak%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 178.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Rump Steak</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/highlands-trout-fillet.jpg" alt="Highlands Trout Fillet" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EHighlands Trout Fillet%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 201.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Highlands Trout Fillet</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                             <span class="dietary-tag">
+                                <i class="fas fa-heart"><i> healthy
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/highlands-trout-full.jpg" alt="Highlands Trout Full" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EHighlands Trout Full%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 270.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Highlands Trout Full</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                             <span class="dietary-tag">
+                                <i class="fas fa-heart"><i> healthy
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/chicken-fillet.jpg" alt="Chicken Fillet" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EChicken Fillet%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 149.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Chicken Fillet</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/chicken-wings.jpg" alt="Chicken Wings" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EChicken Wings%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 149.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Chicken Wings</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/quarter-chicken.jpg" alt="Quarter Chicken" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EQuarter Chicken%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 86.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Quarter Chicken</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/half-chicken.jpg" alt="Half Chicken" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EHalf Chicken%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 161.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Half Chicken</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/beef-stir-fry.jpg" alt="Beef Stir-fry" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EBeef Stir-fry%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 155.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Beef Stir-fry</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/chicken-stir-fry.jpg" alt="Chicken Stir-fry" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EChicken Stir-fry%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 149.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Chicken Stir-fry</h4>
+                        <p> served with either fries/Potato wedges/ mashed potato/ pasta/ rice/ papa and vegetables in season</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+             <div class="row g-4 menu-category" id="dessert-menu" style="display: none;">
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/malva-pudding.jpg" alt="Malva Pudding" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EMalva Pudding%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 55.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Malva pudding</h4>
+                        <p>served with hot custard</p>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/fruit-cocktail.jpg" alt="Fruit Cocktail" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EFruit Cocktail%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 38.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Fruit cocktail</h4>
+                        <p>served with dessert cream</p>
+                         <div class="dietary-info">
+                             <span class="dietary-tag">
+                                <i class="fas fa-leaf"><i> vegetarian
+                            </span>
+                             <span class="dietary-tag">
+                                <i class="fas fa-heart"><i> healthy
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/muffins.jpg" alt="Muffins" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EMuffins%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 45.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Muffins</h4>
+                        <p>served with caramel sauce</p>
+                         <div class="dietary-info">
+                             <span class="dietary-tag">
+                                <i class="fas fa-leaf"><i> vegetarian
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="row g-4 menu-category" id="beverages-menu" style="display: none;">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/juice.jpg" alt="Juice" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EJuice%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 25.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Juice</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/soda.jpg" alt="Soda" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ESoda%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 25.50</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Soda</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/ginger-beer.jpg" alt="Home-made ginger beer" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EHome-made ginger beer%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 10.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Home-made ginger beer</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/coffee.jpg" alt="Coffee" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ECoffee%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 17.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Coffee</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/five-roses.jpg" alt="Five Roses" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EFive Roses%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 15.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Five Roses</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/rooibos.jpg" alt="Rooibos" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ERooibos%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 15.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Rooibos</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/chamomile.jpg" alt="Chamomile" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3EChamomile%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 27.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Chamomile</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="menu-item">
+                      <div class="menu-item-image">
+                         <img src="images/menu/cappuccino.jpg" alt="Cappuccino" onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect width=\'600\' height=\'400\' fill=\'%23EAE2D7\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial, sans-serif\' font-size=\'30\' fill=\'%23333333\'%3ECappuccino%3C/text%3E%3C/svg%3E'" />
+                        <div class="price">M 33.00</div>
+                      </div>
+                      <div class="menu-item-info">
+                        <h4>Cappuccino</h4>
+                         <div class="dietary-info">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+           <div class="text-center mt-4">
+            <button class="btn btn-outline-primary" id="see-more-menu-btn">See More Menu Items <i class="fas fa-arrow-down"><i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="special-events">
+        <div class="container">
+          <h2 class="section-title">
+              Wine and Liquor Menu
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+                <h3>LIQUOR MENU</h3>
+                <ul class="list-unstyled wine-list">
+                    <li>WHISKEY</li>
+                    <li>Jack Daniels <span class="float-end">M 43.00</span></li>
+                    <li>Jim Beam <span class="float-end">M 28.00</span></li>
+                    <li>Johnnie Walker <span class="float-end">M 55.00</span></li>
+                    <li>RUM</li>
+                    <li>Captain Morgan Spiced Gold <span class="float-end">M 24.00</span></li>
+                </ul>
+                <div id="liquor-list-container" class="collapsible-liquor-list">
+                    <ul class="list-unstyled wine-list">
+                        <li>TEQUILA</li>
+                        <li>Olmeca Gold <span class="float-end">M 37.00</span></li>
+                        <li>LIQUEUR</li>
+                        <li>Amarula <span class="float-end">M 22.00</span></li>
+                        <li>Kahlua <span class="float-end">M 37.00</span></li>
+                        <li>Jagemeister <span class="float-end">M 42.00</span></li>
+                        <li>Butlers Strawberry <span class="float-end">M 22.00</span></li>
+                        <li>Triple Sec <span class="float-end">M 22.00</span></li>
+                        <li>CORDIALS</li>
+                        <li>Kola Tonic <span class="float-end">M 7.00</span></li>
+                        <li>Passion Fruit <span class="float-end">M 7.00</span></li>
+                        <li>GIN</li>
+                        <li>Tanqueray Original <span class="float-end">M 59.00</span></li>
+                        <li>Tanqueray Sevilla <span class="float-end">M 40.00</span></li>
+                        <li>Senate Gin <span class="float-end">M 26.00</span></li>
+                        <li>Old Buck <span class="float-end">M 21.00</span></li>
+                        <li>VODKA</li>
+                        <li>1818 Smirnoff Vodka <span class="float-end">M 22.00</span></li>
+                        <li>Brave Hart Vodka <span class="float-end">M 16.00</span></li>
+                        <li>MOCKTAILS</li>
+                        <li>Flirter Non– Alcoholic <span class="float-end">M 40.00</span></li>
+                        <li>Sweet Sunrise <span class="float-end">M 39.00</span></li>
+                        <li>Classic Nojito <span class="float-end">M 34.00</span></li>
+                        <li>Benny Blue <span class="float-end">M 49.00</span></li>
+                        <li>COCKTAILS</li>
+                        <li>Deep Red Sea <span class="float-end">M 116.00</span></li>
+                        <li>Rainbow Paradise <span class="float-end">M 119.00</span></li>
+                        <li>Classic Mojito <span class="float-end">M 78.00</span></li>
+                        <li>Long Island Tea <span class="float-end">M 128.00</span></li>
+                        <li>Classic Mimosa <span class="float-end">M 55.00</span></li>
+                        <li>BEERS & CIDERS</li>
+                        <li>BEERS</li>
+                        <li>Black Label 330ml <span class="float-end">M 39.00</span></li>
+                        <li>Maluti Lager 500ml <span class="float-end">M 49.00</span></li>
+                        <li>Castle Lite 500ml <span class="float-end">M 47.50</span></li>
+                        <li>CIDERS</li>
+                        <li>Savanna Dry 330ml <span class="float-end">M 55.00</span></li>
+                        <li>Brutal Fruit 275ml <span class="float-end">M 43.00</span></li>
+                        <li>Bernini Blush 275ml <span class="float-end">M 43.50</span></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="col-md-6">
+                <h3>WINE MENU</h3>
+                <h4>HOUSE WINES BY GLASS</h4>
+                <ul class="list-unstyled wine-list">
+                    <li>RED WINES <span class="float-end">M 40.00</span></li>
+                    <li>WHITE WINES <span class="float-end">M 28.00</span></li>
+                </ul>
+                 <h4>WINES BY THE BOTTLE</h4>
+                 <ul class="list-unstyled wine-list visible-wine-list">
+                    <li>J.C. Le Roux Le Domaine <span class="float-end">M 208.50</span></li>
+                    <li>J.C. Le Roux La Fleurette <span class="float-end">M 220.50</span></li>
+                </ul>
+
+                <div id="wine-bottle-list-container">
+                    <h4>SPARKLING WINES</h4>
+                     <ul class="list-unstyled wine-list">
+                        <li>J.C. Le Roux Le Domaine <span class="float-end">M 208.50</span></li>
+                        <li>J.C. Le Roux La Fleurette <span class="float-end">M 220.50</span></li>
+                        <li>Champagne <span class="float-end">M 120.00</span></li>
+                    </ul>
+                     <h4>RED WINES</h4>
+                     <ul class="list-unstyled wine-list">
+                        <li>Fat Bastard Merlot <span class="float-end">M 318.50</span></li>
+                        <li>Fat Bastard Golden Reserve <span class="float-end">M 311.00</span></li>
+                        <li>Alto Rouge <span class="float-end">M 245.00</span></li>
+                        <li>Rupert & Rothschild <span class="float-end">M 608.00</span></li>
+                        <li>The Chocolate Block <span class="float-end">M 737.50</span></li>
+                    </ul>
+                     <h4>WHITE WINES</h4>
+                     <ul class="list-unstyled wine-list">
+                        <li>Fat Bastard Chardonnay <span class="float-end">M 245.00</span></li>
+                        <li>Protea Chardonnay <span class="float-end">M 203.50</span></li>
+                        <li>Leopard’s Leap Chardonnay <span class="float-end">M 179.00</span></li>
+                    </ul>
+                     <h4>DESSERT WINES</h4>
+                     <ul class="list-unstyled wine-list">
+                        <li>Port Wine <span class="float-end">M 90.00</span></li>
+                    </ul>
+                </div>
+                <div class="text-center mt-3">
+                    <button class="btn btn-outline-primary" id="see-full-wine-menu-btn">See Full Menu <i class="fas fa-arrow-down"><i></button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section py-5">
+          <div class="container">
+              <h2 class="section-title">Find Us</h2>
+              <div class="row align-items-center">
+                  <div class="col-md-6">
+                      <p class="lead">Visit us at our beautiful location in Mapholaneng, Mokhotlong, Lesotho.</p>
+                      <p>We are nestled in the scenic highlands, offering a tranquil escape with easy access to local attractions.</p>
+                      <p><strong>Address:</strong> Mapholaneng Ha Moupu, Mokhotlong, Lesotho</p>
+                      <p><strong>Email:</strong> info@highlandslodge.com</p>
+                      <p><strong>Phone:</strong> +266 5023 4422</p>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="map-container">
+                          <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_LATITUDE_LONGITUDE_AND_ZOOM_HERE!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zYOUR_PLACE_ID_OR_COORDINATES!5e0!3m2!1sen!2sles!4vYOUR_TIMESTAMP"
+                              width="100%"
+                              height="400"
+                              style="border:0;"
+                              allowfullscreen=""
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade">
+                          <iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+      <section class="reservation-cta">
+        <div class="container text-center">
+          <h2>Make a Reservation</h2>
+          <p>Reserve your table for an unforgettable dining experience</p>
+          <button class="btn-reserve">
+            Book a Table <i class="fas fa-arrow-right"><i>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3><i class="fas fa-mountain"><i> Highlands Lodge</h3>
+              <p>Experience luxury and comfort at its finest. Our hotel combines elegant design with world-class service to create unforgettable stays for our guests.</p>
+              <div class="social-links">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-facebook"><i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-twitter"><i>
+                </a>
+                <a href="https:/instagram.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-instagram"><i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin"><i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="#home-container">Home</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="#about-hero">About us</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="#services-section">Services</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="/terms">Terms of service</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="/privacy">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="#rooms-section">Room Booking</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="#dining-page">Restaurant</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="/spa">Spa & Wellness</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="/events">Event Management</a>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"><i>
+                  <a href="/fitness">Fitness Center</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                <i class="fas fa-map-marker-alt"><i>
+                Mapholaneng Ha Moupu<br />
+                Mokhotlong<br />
+                <i class="fas fa-phone"><i> <a href="tel:+26650234422">+266 5023 4422</a><br />
+                <i class="fas fa-envelope"><i> <a href="mailto:info@highlandslodge.com">info@highlandslodge.com</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="copyright">
+                © 2025 <strong>Highlands Lodge</strong>. All Rights Reserved
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="credits">
+                Designed with <i class="fas fa-heart"><i> by Highlands Lodge Team
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/+26650223322?text=Hello! I'd like to inquire about..." class="whatsapp-fab" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"><i>
+    </a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

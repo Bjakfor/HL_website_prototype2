@@ -1,0 +1,1423 @@
+/* Combined Styles from Contactus.css (Contact Section Styles Removed) */
+:root {
+  --colorprimary: #ced2e0;
+  --colorsecondary:#00ffff;
+  --colorwhite:white;
+  --colorblack:black;
+  --colorgrey0:#f8f8f8;
+  --colorgrey1:#dbe1e8;
+  --colorgrey2:#b2becd;
+  --colorgrey3:#6c7983;
+  --colorgrey4:#454e56;
+  --colorgrey5:#2a2e35;
+  --colorgrey6:#12181b;
+  --br: 30px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,2);
+  /* New variable for the third color - Changed to blue majestic */
+  --colorthird: #0069be; /* Steel Blue */
+
+  /* Theme Colors */
+  --background-color: #e0f7fa; /* Changed to light blue */
+  --text-color: #2c3e50;
+  --secondary-text-color: #666;
+  --card-background: #ffffff;
+  --border-color: #eee;
+  --footer-background: #1a1a1a;
+  --footer-text: #ffffff;
+  --navbar-background: rgba(255, 255, 255, 0.95);
+  --navbar-link-color: #4a4a4a;
+  --navbar-brand-color: #1a1a1a;
+  --section-background-light: #f8f9fa; /* For sections like Services, Menu */
+  --section-background-dark: #fff; /* For sections like Restaurant Info, Special Events */
+
+  /* Standard mode service tile text color */
+  --service-tile-text-color: var(--text-color);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #f8f8f8;
+  --secondary-text-color: #b2becd;
+  --card-background: #2a2e35;
+  --border-color: #454e56;
+  --footer-background: #12181b;
+  --footer-text: #ced2e0;
+  --navbar-background: rgba(30, 30, 30, 0.95);
+  --navbar-link-color: #ced2e0;
+  --navbar-brand-color: #ced2e0;
+  --section-background-light: #2a2e35;
+  --section-background-dark: #1a1a1a;
+
+  /* Dark mode text colors */
+  .navbar-brand {
+      color: var(--text-color); /* White text for navbar brand */
+  }
+
+  .nav-link {
+      color: var(--text-color); /* White text for navbar links */
+  }
+
+  .restaurant-info p {
+      color: var(--text-color); /* White text for restaurant info paragraphs */
+  }
+
+   .restaurant-details h5 {
+      color: var(--text-color); /* White text for restaurant details h5 */
+   }
+
+
+  .service-item h4 {
+      color: var(--text-color); /* White text for service item headings */
+  }
+
+  .room-info p {
+      color: var(--secondary-text-color); /* Using secondary text color for room info paragraphs */
+  }
+
+  /* Added dark mode style for paragraphs in room expansion panel */
+  .room-expansion-panel p {
+      color: var(--text-color); /* White text for paragraphs in room expansion panel */
+  }
+
+  /* Dark mode service tile text color */
+  --service-tile-text-color: var(--text-color);
+
+
+  .btn-outline {
+      color: var(--text-color); /* White text for outline buttons */
+      border-color: var(--text-color); /* Adjust border color for visibility */
+  }
+
+  .btn-outline:hover {
+      color: var(--colorthird); /* Keep hover color consistent */
+      background-color: var(--text-color); /* Adjust background hover color */
+      border-color: var(--colorthird); /* Adjust border hover color */
+  }
+
+
+  .btn-cta {
+      color: var(--text-color); /* White text for CTA button */
+      background-color: var(--colorthird); /* Keep background color consistent */
+      border-color: var(--text-color); /* Adjust border color for visibility */
+  }
+
+   .btn-cta:hover {
+      color: white; /* Keep hover color consistent */
+      background-color: #3a668a; /* Darker blue on hover */
+      border-color: #3a668a; /* Darker blue on hover */
+  }
+
+  .btn-book {
+      color: white; /* Keep white text for book now button in navbar */
+      background-color: var(--colorthird); /* Keep background color consistent */
+      border-color: var(--colorthird); /* Keep border color consistent */
+  }
+
+  .btn-book:hover {
+      background-color: #3a668a; /* Darker blue on hover */
+      border-color: #3a668a; /* Darker blue on hover */
+      color: white; /* Keep hover color consistent */
+  }
+
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.input{
+  border-radius: 15px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--colorgrey2); /* Consider changing this to a theme variable */
+  width: 100%;
+  color: white; /* Consider changing this to a theme variable */
+  resize: none;
+}
+
+
+/* Combined Styles from Footer.css */
+.footer {
+    background: var(--footer-background);
+    color: var(--footer-text);
+    font-size: 14px;
+    padding-top: 60px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.footer-top {
+    padding-bottom: 30px;
+}
+
+/* Footer Info Section */
+.footer-info h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    color: var(--colorthird);
+}
+
+.footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: var(--footer-text); /* Use theme variable */
+}
+
+/* Social Links */
+/* Keeping social-links as it's used in the footer */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: var(--colorthird);
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #ffffff; /* Consider dark mode hover state */
+    color: var(--colorthird);
+    transform: translateY(-3px);
+}
+
+/* Footer Links */
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-links h4 {
+    font-size: 18px;
+    color: var(--colorthird);
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-links h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--colorthird);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    padding: 8px 0;
+}
+
+.footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer-links ul li a {
+    color: var(--footer-text); /* Use theme variable */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--colorthird);
+    padding-left: 5px;
+}
+
+.footer-links ul li i {
+    color: var(--colorthird);
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/* Contact Section (in footer) */
+.footer-contact p {
+    line-height: 26px;
+}
+
+.footer-contact i {
+    color: var(--colorthird);
+    margin-right: 10px;
+}
+
+.footer-contact a {
+    color: var(--footer-text); /* Use theme variable */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--colorthird);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 20px 0;
+    background: #151515; /* Consider dark mode background */
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+body.dark-mode .footer-bottom {
+    background: #0a0a0a; /* Dark mode background for bottom footer */
+}
+
+
+.copyright {
+    text-align: left;
+}
+
+.credits {
+    text-align: right;
+}
+
+.credits i {
+    color: var(--colorthird);
+    margin: 0 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Removed newsletter form margin */
+
+    .copyright, .credits {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .footer-contact, .footer-links, .footer-info {
+        margin-bottom: 30px;
+    }
+}
+
+/* Combined Styles from Navbar.css */
+.navbar {
+    background-color: var(--navbar-background);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+    padding: 1rem 0;
+    transition: all 0.3s ease, background-color 0.5s ease;
+}
+
+body.dark-mode .navbar {
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navbar-brand-color);
+    transition: color 0.3s ease;
+}
+
+.navbar-brand i {
+    color: var(--colorthird);
+    margin-right: 0.5rem;
+}
+
+.navbar-brand:hover {
+    color: var(--colorthird);
+}
+
+.nav-link {
+    color: var(--navbar-link-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover {
+    color: var(--colorthird);
+}
+
+.btn-book {
+    background-color: var(--colorthird);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--colorthird);
+    transition: all 0.3s ease;
+    border-radius: 30px; /* Made more rounded */
+}
+
+.btn-book:hover {
+    background-color: #3a668a; /* Darker blue on hover */
+    border-color: #3a668a; /* Darker blue on hover */
+    color: white;
+}
+
+/* Login button styles removed */
+/*
+.btn-login {
+    background-color: transparent;
+    color: #4a4a4a;
+    border: 2px solid var(--colorthird);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: var(--colorthird);
+    color: white;
+}
+*/
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Adjusted nav-buttons to only contain the theme toggler */
+.nav-buttons {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically align items */
+    gap: 1rem; /* Space between items */
+}
+
+.nav-buttons .nav-item {
+   /* Removed styles as nav-items are moved out */
+   display: none; /* Hide nav-items in nav-buttons */
+}
+
+
+.nav-buttons .btn i {
+    margin-right: 0.5rem;
+}
+
+/* Add space below fixed navbar */
+.navbar-spacer {
+    height: 76px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991.98px) {
+    .nav-buttons {
+        margin-top: 1rem;
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: stretch; /* Stretch items to fill width */
+        gap: 0.5rem;
+    }
+
+    .nav-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+     .nav-buttons .nav-item {
+        display: block; /* Show nav-items in nav-buttons on small screens */
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .navbar-nav {
+        margin: 1rem 0;
+    }
+
+    .nav-link {
+        padding: 0.7rem 0;
+    }
+}
+
+/* Hover Effects */
+.nav-link, .btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--colorthird);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+/* Scroll Effect */
+.navbar.scrolled {
+    background-color: var(--navbar-background); /* Use theme variable */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+}
+body.dark-mode .navbar.scrolled {
+     box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+/* Theme Toggler Styling */
+#theme-toggler {
+    font-size: 1.2rem;
+    color: var(--text-color); /* Use theme variable for color */
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+#theme-toggler:hover {
+    color: var(--colorthird);
+}
+
+
+/* Combined Styles from Home.css */
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('images/hotel-hero.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: -76px; /* Adjust for navbar height */
+  position: relative; /* Needed for absolute positioning of features */
+}
+
+.hero-content {
+  width: 100%;
+  padding: 0 20px;
+  position: relative; /* Ensure content is above features */
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Restyled Features Cards Container */
+.hero-features-cards {
+    position: absolute;
+    bottom: 20px; /* Adjust distance from bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    display: flex;
+    gap: 10px; /* Reduced space between cards */
+    z-index: 2; /* Ensure features are above hero content */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center; /* Center cards horizontally */
+    padding: 0 20px; /* Add padding to prevent cards from touching edges on small screens */
+}
+
+/* Restyled Feature Card within Hero */
+.hero-features-cards .feature-card {
+    text-align: center;
+    padding: 0.8rem; /* Further reduced padding */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    transition: transform 0.3s ease, background-color 0.5s ease;
+    width: 160px; /* Further reduced fixed width for smaller cards */
+}
+
+body.dark-mode .hero-features-cards .feature-card {
+    background: rgba(42, 46, 53, 0.9); /* Dark mode semi-transparent background */
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+.hero-features-cards .feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.hero-features-cards .feature-card i {
+    font-size: 1.5rem; /* Further reduced icon size */
+    color: var(--colorthird);
+    margin-bottom: 0.3rem; /* Smaller margin */
+}
+
+.hero-features-cards .feature-card h3 {
+    font-size: 1rem; /* Further reduced heading size */
+    color: var(--text-color); /* Use theme variable */
+    margin-bottom: 0; /* Removed bottom margin */
+    transition: color 0.5s ease;
+}
+
+
+/* Adjust feature card size and position for smaller screens */
+@media (max-width: 768px) {
+    .hero-features-cards {
+        bottom: 10px;
+        gap: 8px; /* Even smaller gap on very small screens */
+        padding: 0 10px; /* Reduced padding on very small screens */
+    }
+
+    .hero-features-cards .feature-card {
+        width: 130px; /* Even smaller width on very small screens */
+        padding: 0.6rem;
+    }
+
+     .hero-features-cards .feature-card i {
+        font-size: 1.3rem;
+     }
+
+     .hero-features-cards .feature-card h3 {
+        font-size: 0.9rem;
+     }
+}
+
+
+/* Removed Features Section styles */
+/*
+.features-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: var(--colorthird);
+  margin-bottom: 1rem;
+}
+*/
+
+
+/* Rooms Section */
+.rooms-section {
+  padding: 3rem 0; /* Reduced padding */
+  background-color: var(--section-background-light); /* Use theme variable */
+  transition: background-color 0.5s ease;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color); /* Use theme variable */
+  font-weight: 700;
+  transition: color 0.5s ease;
+}
+
+.room-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  cursor: pointer; /* Indicate clickable */
+  display: flex; /* Use flexbox for internal layout */
+  flex-direction: column; /* Stack elements vertically */
+}
+body.dark-mode .room-card {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add styles for the new single room image */
+.room-image.single {
+    background-image: url('images/single-room.jpg'); /* Placeholder */
+}
+
+
+.room-image.deluxe {
+  background-image: url('images/deluxe-room.jpg');
+}
+
+.room-image.executive {
+  background-image: url('images/executive-room.jpg');
+}
+
+.room-image.presidential {
+  background-image: url('images/presidential-room.jpg');
+}
+
+.room-info {
+  padding: 1.5rem;
+  background: var(--card-background); /* Use theme variable */
+  flex-grow: 1; /* Allow info section to grow */
+  transition: background-color 0.5s ease;
+}
+
+.room-info h3 {
+  color: var(--text-color); /* Use theme variable */
+  margin-bottom: 0.5rem;
+  transition: color 0.5s ease;
+}
+
+.price {
+  display: block;
+  color: var(--colorthird);
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+/* Style for the expanded details section within the card (initially hidden) */
+.room-details {
+    display: none; /* Keep hidden within the card */
+}
+
+/* Style for the external room expansion panel */
+.room-expansion-panel {
+    background-color: var(--card-background); /* Use theme variable */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+    padding: 0 2rem; /* Add padding */
+    margin-top: 2rem; /* Space below the room cards row */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow during transition */
+    max-height: 0; /* Start with 0 height for collapse effect */
+    opacity: 0; /* Start with opacity 0 for fade-in */
+    transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out, background-color 0.5s ease, box-shadow 0.5s ease; /* Transitions */
+    display: block; /* Use block display */
+}
+body.dark-mode .room-expansion-panel {
+     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+/* Style for the expanded state of the external panel */
+.room-expansion-panel.expanded {
+    max-height: 1000px; /* Sufficient height to show content (adjust if needed) */
+    opacity: 1; /* Fade in */
+    padding: 2rem; /* Restore padding when expanded */
+}
+
+.room-expansion-panel h5 {
+    color: var(--text-color); /* Use theme variable */
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color); /* Use theme variable */
+    padding-bottom: 5px;
+    transition: color 0.5s ease, border-color 0.5s ease;
+}
+
+.room-expansion-panel ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: var(--secondary-text-color); /* Use theme variable */
+    transition: color 0.5s ease;
+}
+
+.room-expansion-panel ul li {
+    margin-bottom: 5px;
+}
+
+/* Styles for the container holding the room details images */
+.room-details-images {
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between images */
+    margin-bottom: 20px; /* Space below the images */
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    justify-content: center; /* Center images when wrapped */
+}
+
+.room-details-images img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    width: 300px; /* Set a base width */
+    object-fit: cover; /* Cover the area without distorting */
+    border: 1px solid var(--border-color); /* Optional: Add a subtle border - Use theme variable */
+    padding: 5px; /* Optional: Add padding inside the border */
+    background-color: var(--card-background); /* Optional: White background for padding - Use theme variable */
+    transition: border-color 0.5s ease, background-color 0.5s ease;
+}
+
+
+/* Adjust image width for smaller screens */
+@media (max-width: 768px) {
+    .room-details-images img {
+        width: 100%; /* Full width on small screens */
+        max-width: 400px; /* Limit max width even on small screens */
+    }
+}
+
+
+/* Services Section */
+.services-section {
+  padding: 5rem 0;
+  background-color: var(--section-background-light); /* Use theme variable */
+  transition: background-color 0.5s ease;
+}
+
+/* New styles for service tiles */
+.service-tile {
+    background: var(--card-background); /* Use theme variable for background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+    padding: 2rem;
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    height: 100%; /* Ensure tiles in a row have the same height */
+    display: flex; /* Use flexbox for internal layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+body.dark-mode .service-tile {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+.service-tile:hover {
+  transform: translateY(-5px);
+}
+
+.service-tile h3 {
+    color: var(--colorthird); /* Use the accent color for headings */
+    margin-bottom: 1rem;
+    transition: color 0.5s ease;
+}
+
+.service-tile p {
+    color: var(--service-tile-text-color); /* Use the new variable for paragraph text color */
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Allow paragraph to take up available space */
+    transition: color 0.5s ease;
+}
+
+.service-tile ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: var(--service-tile-text-color); /* Use the new variable for list item text color */
+    transition: color 0.5s ease;
+}
+
+.service-tile ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Removed old service-item styles */
+/*
+.service-item {
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item i {
+  font-size: 2.5rem;
+  color: var(--colorthird);
+  margin-bottom: 1rem;
+}
+*/
+
+/* CTA Section */
+/* Removed CTA Section styles */
+
+
+/* Buttons */
+.btn-cta {
+  background-color: var(--colorthird);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px; /* Made more rounded */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-cta:hover {
+  background-color: #3a668a; /* Darker blue on hover */
+  color: white;
+}
+
+.btn-outline {
+  color: var(--colorthird);
+  border: 2px solid var(--colorthird);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background-color: var(--colorthird);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-content p {
+      font-size: 1.2rem;
+  }
+
+  .feature-card, .room-card {
+      margin-bottom: 2rem;
+  }
+}
+
+/* Combined Styles from Dining.css */
+/* Hero Section */
+.dining-hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/dining/hero-dining.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: -76px;
+}
+
+.dining-hero .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.dining-hero .hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Restaurant Info Section */
+.restaurant-info {
+    padding: 5rem 0;
+    background-color: var(--section-background-dark); /* Use theme variable */
+    transition: background-color 0.5s ease;
+}
+
+.restaurant-info h2 {
+    color: var(--text-color); /* Use theme variable */
+    margin-bottom: 1.5rem;
+    transition: color 0.5s ease;
+}
+
+.restaurant-details {
+    margin-top: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.detail-item i {
+    font-size: 1.5rem;
+    color: var(--colorthird);
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+}
+
+.restaurant-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+    transition: box-shadow 0.5s ease;
+}
+body.dark-mode .restaurant-image img {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 5rem 0;
+    background-color: var(--section-background-light); /* Use theme variable */
+    transition: background-color 0.5s ease;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    /* Added flex-wrap for responsiveness */
+    flex-wrap: wrap;
+}
+
+.menu-tab {
+    padding: 1rem 2rem;
+    border: 2px solid var(--colorthird);
+    background: transparent;
+    color: var(--colorthird);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-tab i {
+    margin-right: 0.5rem;
+}
+
+.menu-tab:hover, .menu-tab.active {
+    background: var(--colorthird);
+    color: white;
+}
+
+.menu-item {
+    background: var(--card-background); /* Use theme variable */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+    transition: transform 0.3s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+body.dark-mode .menu-item {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-item-image .price {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: rgba(70, 130, 180, 0.9); /* Use the new color with alpha */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.menu-item-info {
+    padding: 1.5rem;
+}
+
+.menu-item-info h4 {
+    color: var(--text-color); /* Use theme variable */
+    margin-bottom: 0.5rem;
+    transition: color 0.5s ease;
+}
+
+.menu-item-info p {
+    color: var(--secondary-text-color); /* Use theme variable */
+    margin-bottom: 1rem;
+    transition: color 0.5s ease;
+}
+
+.dietary-info {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.dietary-tag {
+    background: var(--section-background-light); /* Use theme variable */
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: var(--secondary-text-color); /* Use theme variable */
+     transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dietary-tag i {
+    color: var(--colorthird);
+    margin-right: 0.3rem;
+}
+
+/* Style for initially hidden menu items */
+.hidden-menu-item {
+    display: none;
+}
+
+/* Style for the See More button */
+#see-more-menu-btn {
+    background-color: transparent;
+    color: var(--colorthird);
+    border: 2px solid var(--colorthird);
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#see-more-menu-btn:hover {
+    background-color: var(--colorthird);
+    color: white;
+}
+
+
+/* Special Events - Wine List Styling */
+.special-events {
+    padding: 5rem 0;
+    background-color: var(--section-background-dark); /* Use theme variable */
+    transition: background-color 0.5s ease;
+}
+
+.special-events .list-unstyled {
+    padding-left: 0; /* Ensure no default padding */
+    list-style: none; /* Ensure no default bullets */
+}
+
+.special-events .list-unstyled li {
+    display: flex; /* Use flexbox to align name and price */
+    justify-content: space-between; /* Push name to left, price to right */
+    align-items: center; /* Vertically align items */
+    padding: 0.75rem 0; /* Add vertical padding between items */
+    border-bottom: 1px dashed var(--border-color); /* Add a dashed line separator - Use theme variable */
+    font-size: 1.1rem; /* Adjust font size */
+    color: var(--text-color); /* Darker text color - Use theme variable */
+    transition: border-color 0.5s ease, color 0.5s ease;
+}
+
+.special-events .list-unstyled li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.special-events .list-unstyled li span.float-end {
+    font-weight: 600; /* Make price bold */
+    color: var(--colorthird); /* Use the third color for price */
+}
+
+.special-events h3,
+.special-events h4 {
+    color: var(--text-color); /* Match section title color - Use theme variable */
+    margin-top: 1.5rem; /* Add space above subheadings */
+    margin-bottom: 1rem; /* Add space below subheadings */
+    border-bottom: 2px solid var(--colorthird); /* Add a line under subheadings */
+    display: inline-block; /* Make the border only as wide as the text */
+    padding-bottom: 5px; /* Space between text and border */
+    transition: color 0.5s ease;
+}
+
+.special-events h3:first-of-type,
+.special-events h4:first-of-type {
+    margin-top: 0; /* No top margin for the first subheading */
+}
+
+/* Style for the container holding the wine bottle lists */
+#wine-bottle-list-container {
+    overflow: hidden; /* Hide overflow during transition */
+    max-height: 0; /* Initially collapsed */
+    opacity: 0; /* Initially hidden */
+    transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out; /* Transitions */
+}
+
+/* Style for the container holding the liquor lists */
+#liquor-list-container {
+    overflow: hidden; /* Hide overflow during transition */
+    max-height: 0; /* Initially collapsed */
+    opacity: 0; /* Initially hidden */
+    transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out; /* Transitions */
+}
+
+
+/* Style for the initially visible wine list */
+.visible-wine-list {
+    margin-bottom: 1.5rem; /* Add space below the visible list */
+}
+
+/* Style for the See Full Wine Menu button */
+#see-full-wine-menu-btn {
+    background-color: transparent;
+    color: var(--colorthird);
+    border: 2px solid var(--colorthird); /* Use --colorthird for border color */
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#see-full-wine-menu-btn:hover {
+    background-color: var(--colorthird);
+    color: white;
+}
+
+
+/* Removed old event-card styles as they are no longer used in this section */
+
+
+/* Reservation CTA */
+.reservation-cta {
+    padding: 5rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('images/dining/reservation-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.btn-reserve {
+    background: var(--colorthird);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-reserve:hover {
+    background: #3a668a; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.btn-reserve i {
+    margin-left: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dining-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-tab {
+        width: 200px;
+    }
+
+    .restaurant-info {
+        text-align: center;
+    }
+
+    .detail-item {
+        justify-content: center;
+    }
+
+    .restaurant-image {
+        margin-top: 2rem;
+    }
+}
+
+/* Styles from About.css (Sections Removed) */
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/about/about-hero.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: -76px;
+}
+
+.about-hero .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about-hero .hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Keeping the lead style as it might be used elsewhere */
+.intro-content .lead {
+    color: var(--colorthird);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Keeping the section-title style as it's used in other sections */
+/* Already defined above */
+
+
+/* Responsive Design for About Hero */
+@media (max-width: 768px) {
+    .about-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* New styles to reduce horizontal padding in main content areas */
+.main-content-area .container {
+    padding-left: 15px; /* Adjust as needed for less padding */
+    padding-right: 15px; /* Adjust as needed for less padding */
+}
+
+/* You might need to adjust padding for different breakpoints if using Bootstrap's responsive padding utilities */
+@media (min-width: 576px) { /* Small devices (landscape phones, 576px and up) */
+    .main-content-area .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 768px) { /* Medium devices (tablests, 768px and up) */
+    .main-content-area .container {
+        padding-left: 20px; /* Example: slightly more padding on tablets */
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
+    .main-content-area .container {
+        padding-left: 30px; /* Example: more padding on desktops */
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 1200px) { /* Extra large devices (large desktops, 1200px and up) */
+    .main-content-area .container {
+        padding-left: 40px; /* Example: even more padding on larger desktops */
+        padding-right: 40px;
+    }
+}
+
+/* Location Section Styles */
+.location-section {
+    background-color: var(--section-background-light); /* Use theme variable */
+    transition: background-color 0.5s ease;
+}
+
+.location-section .section-title {
+    margin-bottom: 3rem;
+}
+
+.location-section .map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Consider dark mode shadow */
+    transition: box-shadow 0.5s ease;
+}
+
+body.dark-mode .location-section .map-container {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+
+.location-section iframe {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    border: 0;
+}
+
+.location-section p {
+    color: var(--text-color); /* Use theme variable */
+    transition: color 0.5s ease;
+}
+
+.location-section p.lead {
+    color: var(--colorthird);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* WhatsApp FAB styles */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    border-radius: 50%;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Adjust icon size */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it stays on top */
+    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.whatsapp-fab:hover {
+    background-color: #128c7e; /* Darker green on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-fab i {
+    /* Ensure icon is centered within the circle */
+    line-height: 1;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .whatsapp-fab {
+        width: 50px;
+        height: 50px;
+        font-size: 1.7rem;
+        bottom: 15px;
+        right: 15px;
+    }
+}
