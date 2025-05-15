@@ -14,8 +14,8 @@
   --br: 30px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,2);
   /* New variable for the third color - Changed to blue majestic */
-  --colorthird: #FFDB58; /* Steel Blue */
-
+  --colorthird: #4682B4; /* Steel Blue */
+ 
   /* Theme Colors */
   --background-color: #e0f7fa; /* Changed to light blue */
   --text-color: #2c3e50;
@@ -97,9 +97,11 @@ body.dark-mode {
 
 
   .btn-cta {
-      color: var(--text-color); /* White text for CTA button */
+      /* Changed to white for standard theme */
+      color: white;
       background-color: var(--colorthird); /* Keep background color consistent */
-      border-color: var(--text-color); /* Adjust border color for visibility */
+      /* Added border for standard theme */
+      border: 2px solid var(--colorthird);
   }
 
    .btn-cta:hover {
@@ -111,7 +113,7 @@ body.dark-mode {
   .btn-book {
       color: white; /* Keep white text for book now button in navbar */
       background-color: var(--colorthird); /* Keep background color consistent */
-      border-color: var(--colorthird); /* Keep border color consistent */
+      border: 2px solid var(--colorthird); /* Keep border color consistent */
   }
 
   .btn-book:hover {
@@ -373,22 +375,6 @@ body.dark-mode .navbar {
     color: white;
 }
 
-/* Login button styles removed */
-/*
-.btn-login {
-    background-color: transparent;
-    color: #4a4a4a;
-    border: 2px solid var(--colorthird);
-    padding: 0.5rem 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.btn-login:hover {
-    background-color: var(--colorthird);
-    color: white;
-}
-*/
-
 .navbar-toggler {
     border: none;
     padding: 0.5rem;
@@ -554,7 +540,7 @@ body.dark-mode .navbar.scrolled {
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Smaller shadow */
     transition: transform 0.3s ease, background-color 0.5s ease;
-    width: 160px; /* Further reduced fixed width for smaller cards */
+    width: 50px; /* Further reduced fixed width for smaller cards */
 }
 
 body.dark-mode .hero-features-cards .feature-card {
@@ -603,33 +589,6 @@ body.dark-mode .hero-features-cards .feature-card {
      }
 }
 
-
-/* Removed Features Section styles */
-/*
-.features-section {
-  padding: 5rem 0;
-  background-color: #f8f9fa;
-}
-
-.feature-card {
-  text-align: center;
-  padding: 2rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-}
-
-.feature-card i {
-  font-size: 2.5rem;
-  color: var(--colorthird);
-  margin-bottom: 1rem;
-}
-*/
 
 
 /* Rooms Section */
@@ -870,17 +829,20 @@ body.dark-mode .service-tile {
 /* Buttons */
 .btn-cta {
   background-color: var(--colorthird);
+  /* Changed to white for standard theme */
   color: white;
   padding: 1rem 2rem;
   border-radius: 30px; /* Made more rounded */
   text-decoration: none;
   transition: all 0.3s ease;
-  border: none;
+  /* Added border for standard theme */
+  border: 2px solid var(--colorthird);
   font-weight: 600;
 }
 
 .btn-cta:hover {
   background-color: #3a668a; /* Darker blue on hover */
+  border-color: #3a668a; /* Darker blue on hover */
   color: white;
 }
 
