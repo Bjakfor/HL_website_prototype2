@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
 <body>
-
+ 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#home-container">
@@ -24,12 +24,13 @@
             aria-controls="navbarContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style="border-color: var(--text-color);"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3E%3Cpath stroke=\'rgba(0, 0, 0, 1)\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' stroke-width=\'2\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#rooms-section">
                   <i class="fas fa-bed"></i> Rooms
@@ -40,49 +41,75 @@
                   <i class="fas fa-utensils"></i> Restaurant
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services-section">
+                  <i class="fas fa-concierge-bell"></i> Services
+                </a>
+              </li>
                <li class="nav-item">
-                 <a href="/booking" class="btn btn-book nav-link">
-                    <i class="fas fa-calendar-check"></i> Book Now
+                 <a href="/booking" class="btn btn-book nav-link rounded-pill" style="border: 2px solid var(--colorthird); background-color: var(--colorthird);">
+                    Book Now
                  </a>
               </li>
             </ul>
 
-            <div class="nav-buttons">
-              <button id="theme-toggler" class="btn btn-link me-2">
-                  <i class="fas fa-moon"></i> </button>
-              </div>
+            <div class="nav-buttons" style="margin-left: 2rem;">
+              <button id="theme-toggler" class="btn btn-link me-2" style="padding: 0; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                <i class="fas fa-moon"></i>
+              </button>
+            </div>
           </div>
         </div>
       </nav>
       <div class="navbar-spacer"></div>
 
-    <div class="home-container main-content-area" id="home-container">
+    <div class="home-container main-content-area mb-5" id="home-container">
       <section class="hero-section">
         <div class="hero-content">
           <h1>Welcome to Highlands Lodge</h1>
           <p>Experience Luxury & Comfort Like Never Before</p>
-          <a href="/booking" class="btn btn-cta">
-            Book Your Stay <i class="fas fa-arrow-right"></i>
+          <a href="/booking" class="btn-reserve" style="text-decoration: none;">
+            Book Your Stay
           </a>
         </div>
-        <div class="hero-features-cards">
-             <div class="feature-card">
+        <div class="hero-features-cards" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+             <div class="feature-card" style="width: 200px; height: 100px; background-color: rgba(255, 255, 255, 0.5);">
                 <i class="fas fa-concierge-bell"></i>
-                <h3>24/7 Service</h3>
+                <h3 style="opacity: 1;">24/7 Service</h3>
               </div>
-             <div class="feature-card">
+             <div class="feature-card" style="width: 200px; height: 100px; background-color: rgba(255, 255, 255, 0.5);">
                 <i class="fas fa-wifi"></i>
-                <h3>Free Wi-Fi</h3>
+                <h3 style="opacity: 1;">Free Wi-Fi</h3>
               </div>
-             <div class="feature-card">
+             <div class="feature-card" style="width: 200px; height: 100px; background-color: rgba(255, 255, 255, 0.5);">
                 <i class="fas fa-parking"></i>
-                <h3>Free Parking</h3>
+                <h3 style="opacity: 1;">Free Parking</h3>
               </div>
-             <div class="feature-card">
-                <i class="fas fa-plane-departure"></i>
-                <h3>3km from airport</h3>
+             <div class="feature-card" style="width: 200px; height: 100px; background-color: rgba(255, 255, 255, 0.5);">
+                <i class="fas fa-coffee"></i>
+                <h3 style="opacity: 1;">restaurent</h3>
               </div>
         </div>
+
+        <style>
+            @media (max-width: 768px) {
+                .hero-features-cards {
+                    gap: 0.5rem !important;
+                }
+                .feature-card {
+                    width: 150px !important;
+                    height: 80px !important;
+                    padding: 0.5rem !important;
+                }
+                .feature-card h3 {
+                    font-size: 0.9rem !important;
+                    margin: 0 !important;
+                }
+                .feature-card i {
+                    font-size: 1.2rem !important;
+                }
+            }
+        </style>
       </section>
 
       <section class="rooms-section" id="rooms-section">
@@ -209,43 +236,42 @@
             <div class="col-md-4">
                 <div class="service-tile">
                     <h3>Guest Services</h3>
-                    <p>We offer a range of services to make your stay comfortable</p>
-                    <ul>
-                        <li>Daily housekeeping</li>
-                        <li>Private check-in/out</li>
-                        <li>Packed lunches</li>
-                        <li>Ironing service (Additional charge)</li>
-                        <li>Laundry (Additional charge)</li>
-                        <li>Room service</li>
-                        <li>Invoice provided</li>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><i class="fas fa-broom"></i> Daily housekeeping</li>
+                        <li><i class="fas fa-user-check"></i> Private check-in/out</li>
+                        <li><i class="fas fa-utensils"></i> Packed lunches</li>
+                        <li><i class="fas fa-tshirt"></i> Ironing service (Additional charge)</li>
+                        <li><i class="fas fa-washing-machine"></i> Laundry (Additional charge)</li>
+                        <li><i class="fas fa-concierge-bell"></i> Room service</li>
+                        <li><i class="fas fa-file-invoice"></i> Invoice provided</li>
                     </ul>
                 </div>
             </div>
              <div class="col-md-4">
                 <div class="service-tile">
                     <h3>Food & Drink</h3>
-                    <ul>
-                        <li>Coffee house on site</li>
-                        <li>Fruit</li>
-                        <li>Wine/Champagne (Additional charge)</li>
-                        <li>Kid-friendly buffet</li>
-                        <li>Kids' meals</li>
-                        <li>Special diet meals (on request)</li>
-                        <li>Breakfast in the room</li>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><i class="fas fa-coffee"></i> Coffee house on site</li>
+                        <li><i class="fas fa-apple-alt"></i> Fruit</li>
+                        <li><i class="fas fa-wine-glass-alt"></i> Wine/Champagne (Additional charge)</li>
+                        <li><i class="fas fa-child"></i> Kid-friendly buffet</li>
+                        <li><i class="fas fa-hamburger"></i> Kids' meals</li>
+                        <li><i class="fas fa-heart"></i> Special diet meals (on request)</li>
+                        <li><i class="fas fa-bed"></i> Breakfast in the room</li>
                     </ul>
                 </div>
             </div>
              <div class="col-md-4">
                 <div class="service-tile">
                     <h3>Transport & Safety</h3>
-                    <ul>
-                        <li>Shuttle service (Additional charge)</li>
-                        <li>Airport shuttle (Additional charge)</li>
-                        <li>Free private parking</li>
-                        <li>Fire extinguishers</li>
-                        <li>24-hour security</li>
-                        <li>Designated smoking area</li>
-                        <li>Smoke-free property</li>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><i class="fas fa-shuttle-van"></i> Shuttle service (Additional charge)</li>
+                        <li><i class="fas fa-plane"></i> Airport shuttle (Additional charge)</li>
+                        <li><i class="fas fa-parking"></i> Free private parking</li>
+                        <li><i class="fas fa-fire-extinguisher"></i> Fire extinguishers</li>
+                        <li><i class="fas fa-shield-alt"></i> 24-hour security</li>
+                        <li><i class="fas fa-smoking"></i> Designated smoking area</li>
+                        <li><i class="fas fa-ban-smoking"></i> Smoke-free property</li>
                     </ul>
                 </div>
             </div>
@@ -256,7 +282,7 @@
       </div>
 
 
-    <div class="dining-page main-content-area" id="dining-page">
+    <div class="dining-page main-content-area mt-5" id="dining-page">
       <div class="dining-hero">
         <div class="hero-content">
           <h1>Fine Dining Experience</h1>
@@ -301,7 +327,7 @@
 
       <section class="menu-section">
         <div class="container">
-          <h2 class="text-center mb-5">Our Menu</h2>
+          <h2 class="text-center mb-5" style="color: var(--text-color);">Our Menu</h2>
 
           <div class="menu-tabs">
             <button class="menu-tab active" data-menu="breakfast">
@@ -760,8 +786,6 @@
                         <li>COCKTAILS</li>
                         <li>Deep Red Sea <span class="float-end">M 116.00</span></li>
                         <li>Rainbow Paradise <span class="float-end">M 119.00</span></li>
-                        <li>Classic Mojito <span class="float-end">M 78.00</span></li>
-                        <li>Long Island Tea <span class="float-end">M 128.00</span></li>
                         <li>Classic Mimosa <span class="float-end">M 55.00</span></li>
                         <li>BEERS & CIDERS</li>
                         <li>BEERS</li>
@@ -807,7 +831,7 @@
                      <ul class="list-unstyled wine-list">
                         <li>Fat Bastard Chardonnay <span class="float-end">M 245.00</span></li>
                         <li>Protea Chardonnay <span class="float-end">M 203.50</span></li>
-                        <li>Leopard’s Leap Chardonnay <span class="float-end">M 179.00</span></li>
+                        <li>Leopard's Leap Chardonnay <span class="float-end">M 179.00</span></li>
                     </ul>
                      <h4>DESSERT WINES</h4>
                      <ul class="list-unstyled wine-list">
@@ -830,8 +854,8 @@
                       <p class="lead">Visit us at our beautiful location in Mapholaneng, Mokhotlong, Lesotho.</p>
                       <p>We are nestled in the scenic highlands, offering a tranquil escape with easy access to local attractions.</p>
                       <p><strong>Address:</strong> Mapholaneng Ha Moupu, Mokhotlong, Lesotho</p>
-                      <p><strong>Email:</strong> info@highlandslodge.com</p>
-                      <p><strong>Phone:</strong> +266 5023 4422</p>
+                      <p><strong>Email:</strong> admin@highlandslodge.co.ls</p>
+                      <p><strong>Phone:</strong> +266 5888 2582</p>
                   </div>
                   <div class="col-md-6">
                       <div class="map-container">
@@ -922,18 +946,6 @@
                   <i class="fas fa-chevron-right"></i>
                   <a href="#dining-page">Restaurant</a>
                 </li>
-                <li>
-                  <i class="fas fa-chevron-right"></i>
-                  <a href="/spa">Spa & Wellness</a>
-                </li>
-                <li>
-                  <i class="fas fa-chevron-right"></i>
-                  <a href="/events">Event Management</a>
-                </li>
-                <li>
-                  <i class="fas fa-chevron-right"></i>
-                  <a href="/fitness">Fitness Center</a>
-                </li>
               </ul>
             </div>
 
@@ -943,8 +955,8 @@
                 <i class="fas fa-map-marker-alt"></i>
                 Mapholaneng Ha Moupu<br />
                 Mokhotlong<br />
-                <i class="fas fa-phone"></i> <a href="tel:+26650234422">+266 5023 4422</a><br />
-                <i class="fas fa-envelope"></i> <a href="mailto:info@highlandslodge.com">info@highlandslodge.com</a><br />
+                <i class="fas fa-phone"></i> <a href="tel:+26658882582">+266 5888 2582</a><br />
+                <i class="fas fa-envelope"></i> <a href="mailto:info@highlandslodge.com">admin@highlandslodge.co.ls</a><br />
               </p>
             </div>
           </div>
@@ -969,7 +981,7 @@
       </div>
     </footer>
 
-    <a href="https://wa.me/+26650223322?text=Hello! I'd like to inquire about..." class="whatsapp-fab" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/+26658882582?text=Hello! I'd like to inquire about..." class="whatsapp-fab" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
 
