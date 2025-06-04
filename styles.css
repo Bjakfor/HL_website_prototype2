@@ -1383,3 +1383,33 @@ body.dark-mode .location-section .map-container {
         right: 15px;
     }
 }
+
+/* Boardroom & Hall Section */
+.boardroom-section {
+    background-color: var(--section-background-light);
+    transition: background-color 0.5s ease;
+}
+
+.boardroom-section h2 {
+    color: var(--text-color);
+    transition: color 0.5s ease;
+}
+
+.boardroom-section h4 {
+    color: var(--text-color);
+    transition: color 0.5s ease;
+}
+
+.boardroom-section p {
+    color: var(--secondary-text-color);
+    transition: color 0.5s ease;
+}
+
+.boardroom-section img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease;
+}
+
+body.dark-mode .boardroom-section img {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
