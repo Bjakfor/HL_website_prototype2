@@ -632,7 +632,7 @@ body.dark-mode .room-card {
 
 /* Add styles for the new single room image */
 .room-image.single {
-    background-image: url('images/single-room.jpg'); /* Placeholder */
+    background-image: url('images/singlee-room.jpg'); /* Placeholder */
 }
 
 
@@ -641,11 +641,11 @@ body.dark-mode .room-card {
 }
 
 .room-image.executive {
-  background-image: url('images/executive-room.jpg');
+  background-image: url('images/presidential-room.jpg');
 }
 
 .room-image.presidential {
-  background-image: url('images/presidential-room.jpg');
+  background-image: url('images/presidentialf-room.jpg');
 }
 
 .room-info {
@@ -1088,9 +1088,7 @@ body.dark-mode .menu-item {
 }
 
 .special-events .list-unstyled li {
-    display: flex; /* Use flexbox to align name and price */
-    justify-content: space-between; /* Push name to left, price to right */
-    align-items: center; /* Vertically align items */
+    display: block; /* Change from flex to block to ensure each item is on its own line */
     padding: 0.75rem 0; /* Add vertical padding between items */
     border-bottom: 1px dashed var(--border-color); /* Add a dashed line separator - Use theme variable */
     font-size: 1.1rem; /* Adjust font size */
@@ -1098,24 +1096,22 @@ body.dark-mode .menu-item {
     transition: border-color 0.5s ease, color 0.5s ease;
 }
 
-.special-events .list-unstyled li:last-child {
-    border-bottom: none; /* No border for the last item */
-}
-
 .special-events .list-unstyled li span.float-end {
+    float: right; /* Float the price to the right */
     font-weight: 600; /* Make price bold */
     color: var(--colorthird); /* Use the third color for price */
 }
 
 .special-events h3,
 .special-events h4 {
-    color: var(--text-color); /* Match section title color - Use theme variable */
-    margin-top: 1.5rem; /* Add space above subheadings */
-    margin-bottom: 1rem; /* Add space below subheadings */
-    border-bottom: 2px solid var(--colorthird); /* Add a line under subheadings */
-    display: inline-block; /* Make the border only as wide as the text */
-    padding-bottom: 5px; /* Space between text and border */
-    transition: color 0.5s ease;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.special-events h4 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
 }
 
 .special-events h3:first-of-type,
